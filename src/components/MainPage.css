@@ -1,8 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Rock+3D&family=Zilla+Slab+Highlight&display=swap');
+
 .MainPage {
-    background : #4e5e78;
+    background : #282828;
     height : 100vh;
 }
 .MainPage-center {
+    padding-top: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;}
+    color : white;
+    flex-direction: column;
+    align-items: left;
+    padding-left : 20vw;
+}
+.MainPage-largeText {
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 80px;
+    user-select : none;
+    margin-right: 300px;
+}
+.MainPage-smallText {
+    font-family : 'Antic Didone';
+}
+.MainPage-button {
+    padding-top: 3vh;
+    flex: 1;
+    font-family : 'Antic Didone';
+    text-decoration: inherit;
+    color: white;
+    font-size: 25px;
+    border-radius : 2px;
+    border: 1px;
+}
