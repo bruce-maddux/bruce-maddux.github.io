@@ -1,0 +1,11 @@
+.Header {
+    background : gray;
+    display : flex;
+    flex-direction : row;
+    padding : 20px;
+}
+.Header-elements {
+    padding-left: 50px;
+    padding-right: 50px;
+
+}

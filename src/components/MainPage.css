@@ -1,0 +1,8 @@
+.MainPage {
+    background : #4e5e78;
+    height : 100vh;
+}
+.MainPage-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;}
