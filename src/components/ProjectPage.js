@@ -3,9 +3,8 @@ import Header from "./Header"
 import './ProjectPage.css'
 export default function ProjectPage(){
     return (
-        <div>
+        <div className = "ProjectPage">
             <Header/>
-            <h1>Project Page</h1>
         </div>
     )
 }

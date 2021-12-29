@@ -4,8 +4,6 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Link,
-  Redirect
 } from "react-router-dom";
 import React, { Component } from 'react';
 import MainPage from './components/MainPage.js'
