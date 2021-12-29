@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Rock+3D&family=Zilla+Slab+Highlight&display=swap');
 
-.MainPage {
+.ContactPage {
     background : #282828;
     height : 100vh;
 }
-.MainPage-center {
+.ContactPage-center {
     padding-top: 200px;
     display: flex;
     justify-content: center;
@@ -13,31 +13,31 @@
     align-items: left;
     padding-left : 20vw;
 }
-.MainPage-largeText {
-    font-family: 'Fredericka the Great', cursive;
+.ContactPage-largeText {
+    font-family: 'Zilla Slab Highlight', cursive;
     font-size: 80px;
     user-select : none;
     margin-right: 300px;
 }
-.MainPage-smallText {
+.ContactPage-smallText {
     font-family : 'Antic Didone';
     padding-bottom : 4vh;
 }
-.MainPage-button {
+.ContactPage-button {
     font-family : 'Antic Didone';
     font-size: 25px;
     border-radius : 10px;
     border-color : white;
     color: black;
 }
-.MainPage-button:hover {
+.ContactPage-button:hover {
     font-family : 'Antic Didone';
     font-size: 25px;
     border-radius : 10px;
     border-color : #c8d7e6;
     color: grey;
 }
-.MainPage-link {
+.ContactPage-link {
     text-decoration: inherit;
     color : black;
 }

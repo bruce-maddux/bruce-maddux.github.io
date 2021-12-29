@@ -11,9 +11,11 @@ export default function MainPage(){
             <div className = "MainPage-center">
                 <div className = "MainPage-largeText">Hey, I'm Bruce.</div>
                 <div className = "MainPage-smallText">Software Development Engineer --- Computer Science @ UF</div>
-                <Link className = "MainPage-button" to="/skills">Learn more about me!</Link>
-
-
+                <Link className = "MainPage-link" to="/skills">
+                    <button className = "MainPage-button">
+                         Learn more about me
+                    </button>                   
+                </Link>
             </div>
         </div>
         
