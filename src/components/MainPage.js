@@ -3,10 +3,9 @@ import Header from "./Header"
 import "./MainPage.css"
 import { Link } from "react-router-dom";
 
-
 export default function MainPage(){
     return (
-        <div className = "MainPage">
+        <div className = "MainPage-wrapper">
             <Header/>
             <div className = "MainPage-center">
                 <div className = "MainPage-largeText">Hey, I'm Bruce.</div>
