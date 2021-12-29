@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Questrial&family=Rock+3D&family=Zilla+Slab+Highlight&display=swap');
+
+.SkillsPage {
+    background : #282828;
+    padding-bottom : 5vh;
+}
+.SkillsPage-center {
+    padding-top: 15vh;
+    display: flex;
+    justify-content: center;
+    color : white;
+    flex-direction: column;
+    align-items: left;
+    padding-left : 20vw;
+}
+.SkillsPage-largeText {
+    font-family: 'Zilla Slab Highlight', cursive;
+    font-size: 80px;
+    user-select : none;
+    margin-right: 300px;
+}
+.SkillsPage-smallText {
+    font-family : 'Antic Didone';
+    padding-bottom : 5vh;
+    width : 40vw;
+    font-size: 18px;
+}
+.SkillsPage-button {
+    font-family : 'Antic Didone';
+    font-size: 25px;
+    border-radius : 10px;
+    border-color : white;
+    color: black;
+}
+.SkillsPage-button:hover {
+    font-family : 'Antic Didone';
+    font-size: 25px;
+    border-radius : 10px;
+    border-color : #c8d7e6;
+    color: grey;
+}
+.SkillsPage-link {
+    text-decoration: inherit;
+    color : black;
+}
+.SkillsPage-bar {
+    width : 40vw;
+    padding-bottom : 3vh;
+}
+.SkillsPage-barText{
+    font-family: 'Questrial', sans-serif;
+    font-size : 23px;
+}
+.SkillsPage-headerText{
+    font-family : 'Questrial', sans-serif;
+    font-size : 35px;
+}
+.SkillsPage-interestHeaderText{
+    font-size : 20px;
+    cursor: pointer;
+}
+.SkillsPage-interestHeaderText-hover{
+    cursor : pointer;
+}

@@ -1,11 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Rock+3D&display=swap');
+
+
 .Header {
-    background : gray;
     display : flex;
     flex-direction : row;
-    padding : 20px;
+    height: 12vh;
+    align-items: center;
+    padding-top: 15px;
 }
 .Header-elements {
-    padding-left: 50px;
-    padding-right: 50px;
-
+    flex: 1;
+    font-family : 'Antic Didone';
+    text-decoration: inherit;
+    color: white;
+    font-size: 25px;
+}
+.Header-container {
+    display : flex;
+    flex-direction: row;
+    width : 20vw;
+    position : absolute;
+    right : 5vw;
+}
+.Header-elements:hover {
+    color: gray;
+}
+.Header-name {
+    padding-left : 8vw;
+    font-family : 'Rock 3D';
+    font-size: 50px;
+    color : white;
+    user-select : none;
+    text-decoration: inherit;
+}
+.Header-name:hover {
+    color: gray;
 }

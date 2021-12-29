@@ -8,11 +8,10 @@ import {
   Redirect
 } from "react-router-dom";
 import React, { Component } from 'react';
-import MainPage from './components/MainPage'
-import ContactPage from './components/ContactPage'
-import ProjectPage from './components/ProjectPage'
-import Header from './components/Header'
-
+import MainPage from './components/MainPage.js'
+import ContactPage from './components/ContactPage.js'
+import ProjectPage from './components/ProjectPage.js'
+import SkillsPage from './components/SkillsPage.js';
 
 class App extends Component {
   render()
@@ -24,19 +23,11 @@ class App extends Component {
             <Route path="/" element={<MainPage/>} />
             <Route path="/contact" element = {<ContactPage/>}/>
             <Route path="/project" element = {<ProjectPage/>}/>
+            <Route path="/skills" element = {<SkillsPage/>}/>
           </Routes>
-          
         </Router>
       </div>
   );
 }
 }
-function Dashboard() {
-  return (
-    <div>
-      <h2>Dashboard</h2>
-    </div>
-  );
-}
-
 export default App;

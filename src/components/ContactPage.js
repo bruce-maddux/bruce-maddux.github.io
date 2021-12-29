@@ -1,13 +1,15 @@
 import React from 'react'
 import Header from './Header'
+import "./ContactPage.css"
 
 
 export default function ContactPage(){
     return (
-        <div>
+        <div className = "ContactPage">
             <Header/>
-            <h1>Contact Page</h1>
-
+            <div className = "ContactPage-center">
+                <div className = "ContactPage-largeText">Contact Me</div>
+            </div>
         </div>
     )
 }
