@@ -7,6 +7,7 @@
     height: 12vh;
     align-items: center;
     padding-top: 15px;
+    z-index : 2;
 }
 .Header-elements {
     flex: 1;

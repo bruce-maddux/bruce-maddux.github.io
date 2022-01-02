@@ -10,7 +10,7 @@ import MainPage from './components/MainPage.js'
 import ContactPage from './components/ContactPage.js'
 import ProjectPage from './components/ProjectPage.js'
 import SkillsPage from './components/SkillsPage.js';
-
+import PvE from './components/PvE.js'
 class App extends Component {
   render()
   {
@@ -22,6 +22,7 @@ class App extends Component {
             <Route path="/contact" element = {<ContactPage/>}/>
             <Route path="/project" element = {<ProjectPage/>}/>
             <Route path="/skills" element = {<SkillsPage/>}/>
+            <Route path = "/PvE" element = {<PvE/>}/>
           </Routes>
         </Router>
       </div>

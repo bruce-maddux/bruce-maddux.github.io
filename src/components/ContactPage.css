@@ -3,6 +3,7 @@
 .ContactPage {
     background : #282828;
     height : 100vh;
+    
 }
 .ContactPage-center {
     padding-top: 200px;
@@ -12,6 +13,9 @@
     flex-direction: column;
     align-items: center;
 }
+.ContactPage-header{
+    z-index : 5;
+}
 .ContactPage-largeText {
     font-family: 'Questrial', sans-serif;
     font-size: 80px;
@@ -19,18 +23,16 @@
     position: absolute;
     top: 20vh;
     padding-bottom : 20vh;
+    z-index : 5;
 }
 .ContactPage-smallText {
     font-family: 'Questrial', sans-serif;
     font-size : 30px;
-    padding-bottom : 4vh;
+    padding-bottom : 1vh;
+    z-index : 5;
 }
 .ContactPage-button {
-    font-family : 'Antic Didone';
-    font-size: 25px;
-    border-radius : 10px;
-    border-color : white;
-    color: black;
+    color : transparent;
 }
 .ContactPage-button:hover {
     font-family : 'Antic Didone';
@@ -44,32 +46,30 @@
     color : black;
 }
 .ContactPage-socialContainer {
-    width : 40vw;
+    width : 45vw;
     flex-direction: row;
     display : flex;
+    justify-content: center;
+    z-index : 2;
 }
 .ContactPage-github {
-    flex : 1;
     color : gray;
 }
-.ContactPage-github:hover {
-    cursor : pointer;
-    font-size : 220px;
-}
 .ContactPage-linkedIn {
-    flex : 1;
     color : #0072b1 ;
 }
-.ContactPage-linkedIn:hover {
-    cursor : pointer;
-    border : 5px white;
-    font-size : 220px;
-}
 .ContactPage-google {
-    flex : 1;
     color :#F4B400
 }
-.ContactPage-google:hover {
-    cursor : pointer;
-    font-size : 220px;
+.ContactPage-socialDiv{
+    flex : 1;
+}
+.ContactPage-socialDiv:hover{
+    font-size : 20px;
+    cursor: pointer;
+}
+.ContactPage-PvE{
+    z-index : 1;
+    position:absolute;
+    bottom : 0vh;
 }
