@@ -6,7 +6,7 @@ import {faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faGithub} from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import PvE from './PvE.js'
-
+import PopUp from './Modal'
 export default function ContactPage(){
     function handleGithubClick(){
         window.open('https://github.com/knexprince');
@@ -37,6 +37,9 @@ export default function ContactPage(){
                         <FontAwesomeIcon className = "ContactPage-github" icon= {faGithub} size = '10x'/>
                     </div>
                 </div>
+            </div>
+            <div>
+                <PopUp></PopUp>
             </div>
 
         </div>
