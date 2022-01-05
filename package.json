@@ -1,5 +1,5 @@
 {
-  "homepage" : "http://knexprince.github.io/my-website",
+  "homepage": "http://bruce-maddux.github.io/bruce-maddux.github.io",
   "name": "my-website",
   "version": "0.1.0",
   "private": true,
@@ -52,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
