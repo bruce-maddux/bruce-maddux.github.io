@@ -31,7 +31,7 @@ class PvE extends Component{
               this.load.image('ground', "assets/ground.png")
               this.load.image('platform', "assets/ground2.png")
   
-              this.load.spritesheet('gatorWalkRight',"assets/walkv4.png", {frameWidth: 400, frameHeight: 400} )
+              this.load.spritesheet('gatorWalkRight',"./assets/walkv4.png", {frameWidth: 400, frameHeight: 400} )
               this.load.spritesheet('gatorWalkLeft',"assets/walkmirrorr.png", {frameWidth: 400, frameHeight: 400} )
   
               this.load.spritesheet('gatorWalkIdle',"assets/idlv4.png", {frameWidth: 400, frameHeight: 400})
@@ -62,7 +62,7 @@ class PvE extends Component{
               let windowWidth = window.innerWidth;
               let windowHeight = window.innerHeight;
 
-              this.player = this.physics.add.sprite(160,160, "albert");
+              this.player = this.physics.add.sprite(200,500, "albert");
               this.player.setBounce(0.2);
               this.player.setCollideWorldBounds(true);
               this.player.body.setGravity(0, 400);
@@ -212,7 +212,7 @@ class PvE extends Component{
   render(){
     const { initialize, game } = this.state
     return (
-    <IonPhaser game={game} initialize = {initialize} style = {{overflow : "hidden"}} />
+    <IonPhaser game={game} initialize = {initialize} />
   )
   }
 }
