@@ -1,7 +1,7 @@
 import './StyleSheets/App.css';
 import { render } from "react-dom";
 import {
-  BrowserRouter as Router,
+  HashRouter  as Router,
   Route,
   Routes,
 } from "react-router-dom";

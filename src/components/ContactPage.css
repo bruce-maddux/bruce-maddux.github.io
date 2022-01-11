@@ -3,7 +3,6 @@
 .ContactPage {
     background : #282828;
     height : 100vh;
-    
 }
 .ContactPage-center {
     padding-top: 200px;
@@ -15,6 +14,11 @@
 }
 .ContactPage-header{
     z-index : 5;
+}
+.ContactPage-textContainer{
+    left: 20vw;
+    justify-content: left;
+    position:absolute;
 }
 .ContactPage-largeText {
     font-family: 'Questrial', sans-serif;
@@ -46,30 +50,54 @@
     color : black;
 }
 .ContactPage-socialContainer {
-    width : 45vw;
+    width : 50vw;
     flex-direction: row;
     display : flex;
     justify-content: center;
     z-index : 2;
+    padding-top : 75px;
 }
 .ContactPage-github {
     color : gray;
-}
-.ContactPage-linkedIn {
-    color : #0072b1 ;
-}
-.ContactPage-google {
-    color :#F4B400
-}
-.ContactPage-socialDiv{
     flex : 1;
 }
-.ContactPage-socialDiv:hover{
-    font-size : 20px;
+.ContactPage-github:hover {
     cursor: pointer;
+}
+.ContactPage-linkedIn {
+    color : #0072b1;
+    flex : 1;
+}
+.ContactPage-linkedIn:hover {
+    cursor : pointer;
+}
+.ContactPage-google {
+    color :#F4B400;
+    flex : 1;
+}
+.ContactPage-google:hover {
+    cursor : pointer ;
 }
 .ContactPage-PvE{
     z-index : 1;
     position:absolute;
     bottom : 0vh;
+}
+.ContactPage-loading{
+    height : 100%;
+    width : 100%;
+    background : #282828;
+    z-index: 7;
+    position : absolute;
+}
+.ContactPage-loadingIcon{
+    position: absolute;
+    left: 45vw;
+    top : 45vh;
+}
+.ContactPage-PopUp{
+    z-index: 5;
+    position: absolute;
+    right : 5vw;
+    bottom : 5vh;
 }
