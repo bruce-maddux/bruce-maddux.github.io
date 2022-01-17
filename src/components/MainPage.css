@@ -13,6 +13,9 @@
     align-items: left;
     padding-bottom : 10vw;
 }
+.MainPage-textContainer {
+    justify-content : left;
+}
 .MainPage-largeText {
     font-family: 'Fredericka the Great', cursive;
     font-size: 85px;
@@ -40,6 +43,18 @@
 .MainPage-link {
     text-decoration: inherit;
     color : black;
+}
+.MainPage-loading{
+    height : 100%;
+    width : 100%;
+    background : #282828;
+    z-index: 7;
+    position : absolute;
+}
+.MainPage-loadingIcon{
+    position: absolute;
+    left: 45vw;
+    top : 45vh;
 }
 .MainPage-wrapper {
     animation: scroll 90s linear infinite;

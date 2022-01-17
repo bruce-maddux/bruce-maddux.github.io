@@ -1,14 +1,15 @@
 import React from 'react'
 import Header from "./Header"
 import './ProjectPage.css'
-import PopUp from './PopUp'
-
-
+import './background.scss'
 export default function ProjectPage(){
     return (
         <div className = "ProjectPage">
             <Header/>
-            <div>Power Smart Project</div>
+            <div className = "ProjectPage-container">
+                <div className = "ProjectPage-title">Projects</div>
+                <div style={{ borderTop: "2px solid #fff ", width: "60vw"}}></div>
+            </div>
         </div>
     )
 }

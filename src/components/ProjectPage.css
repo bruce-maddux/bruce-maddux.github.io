@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Open+Sans:wght@300;400;800&family=Questrial&family=Raleway&family=Roboto&family=Rock+3D&family=Zilla+Slab+Highlight&display=swap');
+
 .ProjectPage {
     background : #282828;
     padding-bottom : 5vh;
     height : 100vh;
 }
-.ProjectPage-button {
-    display:block;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  border: 1px solid red;
+.ProjectPage-container {
+    padding-top: 10vh;
+    position: absolute;
+    left: 18vw;
+    color: white;
+}
+.ProjectPage-title {
+    font-family: 'Raleway';
+    font-size: 50px;
+    font-weight: 400;
+}
+.ProjectPage-line {
+    height : 5;
+    width: 100vw;
+    color: white;
+    background-color: white;
 }

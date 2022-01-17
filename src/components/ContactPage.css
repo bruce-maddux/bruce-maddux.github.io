@@ -15,11 +15,6 @@
 .ContactPage-header{
     z-index : 5;
 }
-.ContactPage-textContainer{
-    left: 20vw;
-    justify-content: left;
-    position:absolute;
-}
 .ContactPage-largeText {
     font-family: 'Questrial', sans-serif;
     font-size: 80px;

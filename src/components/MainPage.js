@@ -2,10 +2,35 @@ import React from 'react'
 import Header from "./Header"
 import "./MainPage.css"
 import { Link } from "react-router-dom";
+import {Grid} from 'react-loader-spinner'
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import './background.scss'
 
-export default function MainPage(){
-    return (
-        <div className = "MainPage-wrapper">
+class MainPage extends React.Component{
+    state = {
+        loading: true
+      };
+    
+    componentDidMount() {
+        setTimeout(function() { //Start the timer
+            this.setState({loading: false}) //After 1 second, set loading to false
+        }.bind(this), 1500)
+    }
+    render(){
+        const { loading } = this.state;
+        return (
+        <div className = "body">
+            {loading && 
+            <div className = "MainPage-loading">
+            <div className = "MainPage-loadingIcon">
+                <Grid
+                height = {100}
+                width = {100}
+                color="grey"
+                arialLabel="loading-indicator"
+                />
+            </div>
+        </div> }
             <Header/>
             <div className = "MainPage-center">
                 <div className = "MainPage-largeText">Hey, I'm Bruce.</div>
@@ -19,5 +44,7 @@ export default function MainPage(){
         </div>
         
     )
+    }
 }
+export default MainPage;
 
