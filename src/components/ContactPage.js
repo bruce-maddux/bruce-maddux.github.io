@@ -56,10 +56,9 @@ class ContactPage extends React.Component {
                     </div>
                     
                     <div className = "ContactPage-center">
-                        <div className = "ContactPage-largeText">Get in touch</div>
-                        <div className = "ContactPage-smallText">brucema7@gmail.com</div>
-                        <div className = "ContactPage-smallText">727-698-0062</div>
-                        
+                            <div className = "ContactPage-largeText">Get in touch</div>
+                            <div className = "ContactPage-smallText">brucema7@gmail.com</div>
+                            <div className = "ContactPage-smallText">727-698-0062</div>
                         <div className = "ContactPage-socialContainer">
                                 <FontAwesomeIcon className = "ContactPage-google" icon= {faEnvelope} size = '10x' onClick = {this.handleEmailClick} />
                                 <FontAwesomeIcon className = "ContactPage-linkedIn" icon= {faLinkedin} size = '10x' onClick = {this.handleLinkedinClick}/>

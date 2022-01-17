@@ -25,13 +25,9 @@ class PvE extends Component{
             function() {
             },
             preload: function() {
-              console.log("first")
-              this.load.image('marston', "assets/background2saturation.png")
               this.load.image("albert", "assets/walk1.png")
-              this.load.image('ground', "assets/ground.png")
-              this.load.image('platform', "assets/ground2.png")
   
-              this.load.spritesheet('gatorWalkRight',"./assets/walkv4.png", {frameWidth: 400, frameHeight: 400} )
+              this.load.spritesheet('gatorWalkRight', "assets/walkv4.png", {frameWidth: 400, frameHeight: 400} )
               this.load.spritesheet('gatorWalkLeft',"assets/walkmirrorr.png", {frameWidth: 400, frameHeight: 400} )
   
               this.load.spritesheet('gatorWalkIdle',"assets/idlv4.png", {frameWidth: 400, frameHeight: 400})
@@ -52,6 +48,8 @@ class PvE extends Component{
   
             },
             create:function(){
+              this.player = this.physics.add.sprite(200,500, "albert");
+
               this.keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W);
               this.keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A);
               this.keyS = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.S);
@@ -59,10 +57,7 @@ class PvE extends Component{
               this.keyQ = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.Q);
               this.keyE = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.E);
 
-              let windowWidth = window.innerWidth;
-              let windowHeight = window.innerHeight;
 
-              this.player = this.physics.add.sprite(200,500, "albert");
               this.player.setBounce(0.2);
               this.player.setCollideWorldBounds(true);
               this.player.body.setGravity(0, 400);
@@ -146,14 +141,12 @@ class PvE extends Component{
             update:  function() {
               if(this.keyD.isDown){
                 this.player.x += 4;
-                console.log("PRESSINg Right")
                 this.player.anims.play('right', true);
                 this.isTurned = false;
 
               }
               else if(this.keyA.isDown){
                 this.player.x -= 4;
-                console.log("PRESSINg Right")
                 this.player.anims.play('left', true);
                 this.isTurned = true;
 

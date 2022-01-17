@@ -28,7 +28,7 @@ class PopUp extends React.Component{
                     <Modal.Title>Gator Controls</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>Use the keys WASD to control the gator</Modal.Body>
-                    <img className = "PopUp-image" src="/assets/keyboard.JPG" alt="image" />
+                    <img className = "PopUp-image" src="/assets/keyboard.jpg" />
                     <Modal.Body> and hold "Q" to chomp, and "E" to swipe!</Modal.Body>
                     <Modal.Footer>
                     <Button variant="secondary" onClick={() => this.handleModalShowHide()}>

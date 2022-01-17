@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Rock+3D&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Open+Sans:wght@300;400;800&family=Questrial&family=Raleway&family=Roboto&family=Rock+3D&family=Zilla+Slab+Highlight&display=swap');
 
 
 .Header {
@@ -10,11 +10,11 @@
     z-index : 2;
 }
 .Header-elements {
-    flex: 1;
-    font-family : 'Antic Didone';
+    font-family : 'Open Sans';
     text-decoration: inherit;
     color: white;
     font-size: 25px;
+    padding-right: 2vw;
 }
 .Header-container {
     display : flex;
