@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Questrial&family=Rock+3D&family=Zilla+Slab+Highlight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Open+Sans:wght@300;400;800&family=Questrial&family=Raleway&family=Roboto&family=Rock+3D&family=Zilla+Slab+Highlight&display=swap');
 
 .SkillsPage {
     background : #282828;
@@ -56,9 +56,30 @@
     font-size : 35px;
 }
 .SkillsPage-interestHeaderText{
-    font-size : 20px;
+    font-size : 25px;
     cursor: pointer;
+    padding-right: 1vw;
 }
 .SkillsPage-interestHeaderText-hover{
     cursor : pointer;
+}
+.SkillsPage-button {
+    font-family : 'Raleway';
+    font-weight: 100px;
+    font-size: 30px;
+    border-radius : 10px;
+    border-color : white;
+    color: black;
+}
+.SkillsPage-button:hover {
+    font-family : "Raleway";
+    font-size: 30px;
+    border-radius : 10px;
+    border-color : #c8d7e6;
+    color: grey;
+}
+.SkillsPage-buttonContainer {
+    text-decoration: inherit;
+    color : black;
+    padding-bottom: 2vw;
 }

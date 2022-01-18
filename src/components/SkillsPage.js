@@ -3,11 +3,18 @@ import Header from "./Header"
 import "./SkillsPage.css"
 import { ProgressBar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import resume from "../photos/Maddux Bruce Resume 1-7-22.pdf"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+
 
 export default function SkillsPage(){
-
-    const [frontEnd, setFrontEnd] = useState(false);
-    const [backEnd, setBackEnd] = useState(false);
+    function handleResume() {
+        window.open(resume)
+    }
+    const [frontEnd, setFrontEnd] = useState(true);
+    const [backEnd, setBackEnd] = useState(true);
     return (
         <div className = "SkillsPage">
             <Header/>
@@ -21,7 +28,11 @@ export default function SkillsPage(){
                   for personal and class projects. I also have some experience working with backend, specifically using the MERN stack
                    when creating a mobile app to store user data (login information, location, etc.). Although most of my interests 
                    have been in front-end development, I hope to take on the role of a full-stack developer later in my career.
-
+                </div>
+                <div className = "SkillsPage-buttonContainer" onClick = {handleResume}>
+                    <button className = "SkillsPage-button">
+                         View my resume
+                    </button>                   
                 </div>
                 <div className = "SkillsPage-headerText">Skills</div>
                 <div className = "SkillsPage-bar">
@@ -50,13 +61,19 @@ export default function SkillsPage(){
                 </div>
 
                 <div className = "SkillsPage-headerText">Interests</div>
-                <div className = "SkillsPage-interestHeaderText" onClick = {() => setFrontEnd(!frontEnd)}>
+                <div style = {{display: "flex", flexDirection: "row", alignItems: "center"}}>
+                    <div className = "SkillsPage-interestHeaderText"onClick = {() => setFrontEnd(!frontEnd)}>
                     Front End
+                    </div>
+                    {frontEnd ? <FontAwesomeIcon icon= {faAngleDown} size = '2x'/> : <FontAwesomeIcon icon= {faAngleUp} size = '2x'/>}
                 </div>
                 {frontEnd && <div>Explaining stuff ive done with front end stuff</div>}
 
-                <div className = "SkillsPage-interestHeaderText" onClick = {() => setBackEnd(!backEnd)}>
-                    Back-end / Fullstack
+                <div style = {{display: "flex", flexDirection: "row", alignItems: "center"}}>
+                    <div className = "SkillsPage-interestHeaderText"onClick = {() => setBackEnd(!backEnd)}>
+                    Back End / Fullstack
+                    </div>
+                    {backEnd ? <FontAwesomeIcon icon= {faAngleDown} size = '2x'/> : <FontAwesomeIcon icon= {faAngleUp} size = '2x'/>}
                 </div>
                 {backEnd && <div>Explaining stuff ive done with front end stuff</div>}
             </div>

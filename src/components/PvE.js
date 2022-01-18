@@ -26,7 +26,6 @@ class PvE extends Component{
             },
             preload: function() {
               this.load.image("albert", "assets/walk1.png")
-  
               this.load.spritesheet('gatorWalkRight', "assets/walkv4.png", {frameWidth: 400, frameHeight: 400} )
               this.load.spritesheet('gatorWalkLeft',"assets/walkmirrorr.png", {frameWidth: 400, frameHeight: 400} )
   

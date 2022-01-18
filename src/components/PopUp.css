@@ -23,7 +23,25 @@
     cursor : pointer;
     color : lightgray;
 }
-.PopUp-image{
-    height : 150px;
-    width : 225px;
+.PopUp-gatorCronch{
+    height: 175px;
+    width: 200px;
+    background: url("../photos/cronchSmall.png") 0px 0px;
+    animation: play 1.8s steps(8) infinite;
+}
+@keyframes play {
+    100% {
+        background-position: -1805px;
+    }
+}
+.PopUp-gatorSwipe{
+    height: 200px;
+    width: 200px;
+    background: url("../photos/swipeSmall.png") 0px 0px;
+    animation: play 1s steps(4) infinite;
+}
+@keyframes play {
+    100% {
+        background-position: -1805px;
+    }
 }
