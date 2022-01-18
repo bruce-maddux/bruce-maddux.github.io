@@ -65,17 +65,17 @@ class PvE extends Component{
               this.physics.add.collider(this.player,this.platform);
                this.anims.create({
               key: 'right',
-              frames: this.anims.generateFrameNumbers('gatorWalkRight', { start: 0, end: 8 }),
+              frames: this.anims.generateFrameNumbers('gatorWalkRight', { start: 0, end: 7 }),
               frameRate: 10,
-              repeat: -1
+              repeat: 0
 
 
             });
             this.anims.create({
               key: 'left',
-              frames: this.anims.generateFrameNumbers('gatorWalkLeft', { start: 0, end: 8 }),
+              frames: this.anims.generateFrameNumbers('gatorWalkLeft', { start: 0, end: 7 }),
               frameRate: 10,
-              repeat: -1
+              repeat: 0
             });
             this.anims.create({
               key: 'idle',
@@ -155,7 +155,6 @@ class PvE extends Component{
                   if (this.isTurned)
                   {
                     this.player.anims.play('jumpMirror', true);
-
                   }
                   else {
                     this.player.anims.play('jump', true);

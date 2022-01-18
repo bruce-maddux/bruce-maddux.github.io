@@ -1,24 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Antic+Didone&family=Bungee+Inline&family=Fredericka+the+Great&family=Monofett&family=Open+Sans:wght@300;400;800&family=Questrial&family=Raleway&family=Roboto&family=Rock+3D&family=Zilla+Slab+Highlight&display=swap');
-
 .ProjectPage {
-    background : #282828;
+    background-color: #282828;
     padding-bottom : 5vh;
-    height : 100vh;
+    height: 300vh;
 }
 .ProjectPage-container {
     padding-top: 10vh;
     position: absolute;
     left: 18vw;
     color: white;
+    width: 60vw;
 }
 .ProjectPage-title {
     font-family: 'Raleway';
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 600;
 }
-.ProjectPage-line {
-    height : 5;
-    width: 100vw;
-    color: white;
-    background-color: white;
+.ProjectPage-textContainer {
+    width: 50vw;
+}  
+.ProjectPage-projectName {
+    font-family : 'Raleway';
+    font-size: 30px;
+    font-weight : 600;
+    padding-right : 1vw;
+}
+.ProjectPage-paragraph {
+    font-family: 'Roboto';
+    font-size: 18px;
+    padding-bottom: 2vh;
+}
+.ProjectPage-demos {
+    height: 60vh;
+    flex: 1;
+}
+.ProjectPage-demos:hover {
+    cursor: pointer;
+}
+.ProjectPage-smallHeader{
+    font-family : 'Raleway';
+    font-size: 22px;
+    font-weight : 600;
+    padding-bottom: 1vh;
+}
+.ProjectPage-socials{
+    cursor:default
+}
+.ProjectPage-socials:hover{
+    cursor:pointer;
+}
+.ProjectPage-gator{
+    height: 400px;
+    width: 400px;
+    background: url("../photos/walkv4.png") 0px 0px;
+    animation: play 1.5s steps(8) infinite;
+}
+@keyframes play {
+    100% {
+        background-position: -3200px;
+    }
+}
+.ProjectPage-gatorInvert {
+    height: 400px;
+    width: 400px;
+    background: url("../photos/walkmirrorinverted.png") 0px 0px;
+    animation: play 1.5s steps(8) infinite;
+}
+@keyframes play {
+    100% {
+        background-position: -3200px;
+    }
 }

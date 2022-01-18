@@ -15,7 +15,12 @@ export default function SkillsPage(){
             <div className = "SkillsPage-center">
                 <div className = "SkillsPage-largeText">About Me</div>
                 <div className = "SkillsPage-smallText">
-                I am a third year Computer Science Major / Electrical Engineering Minor at the University of Florida, starting my coding journey working in Java, and C++. I’ve become most comfortable using C++, but more recently (within the last 2 years) I’ve been working with React.js and Native, making web apps, and developing mobile apps for personal and class projects. I also have some experience working with backend, specifically using the MERN stack when creating a mobile app to store user data (login information, location, etc.). Although most of my interests have been in front-end development, I hope to take on the role of a full-stack developer later in my career.
+                I am a third year Computer Science Major / Electrical Engineering Minor at the University of Florida, 
+                starting my coding journey working in Java, and C++. I’ve become most comfortable using C++, but more recently
+                 (within the last 2 years) I’ve been working with React.js and Native, making web apps, and developing mobile apps
+                  for personal and class projects. I also have some experience working with backend, specifically using the MERN stack
+                   when creating a mobile app to store user data (login information, location, etc.). Although most of my interests 
+                   have been in front-end development, I hope to take on the role of a full-stack developer later in my career.
 
                 </div>
                 <div className = "SkillsPage-headerText">Skills</div>
