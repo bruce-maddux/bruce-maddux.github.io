@@ -8,9 +8,11 @@ import {faYoutube} from '@fortawesome/free-brands-svg-icons'
 import { faChartLine } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDesktop } from '@fortawesome/free-solid-svg-icons'
+import { faTrophy } from '@fortawesome/free-solid-svg-icons'
 import demo1 from "../photos/demo1.mp4"
 import demo2 from "../photos/demo2.mp4"
 import demo3 from "../photos/demo3.mp4"
+import devPost from '../photos/devpost.svg'
 
 export default class ProjectPage extends React.Component{
     handlePowerSmartGH(){
@@ -34,6 +36,15 @@ export default class ProjectPage extends React.Component{
     handleWebsiteGH(){
         window.open('https://github.com/bruce-maddux/my-website')
     }
+    handleSwamphacks2022YT(){
+        window.open('https://www.youtube.com/watch?v=KCkrM6NPDH8')
+    }
+    handleSwamphacks2022GH(){
+        window.open('https://github.com/bruce-maddux/swamphacks-viii')
+    }
+    handleSwamphacks2022DP(){
+        window.open('https://devpost.com/software/cartit?ref_content=my-projects-tab&ref_feature=my_projects')
+    }
     render() {
     return (
         <div className = "ProjectPage">
@@ -44,11 +55,56 @@ export default class ProjectPage extends React.Component{
 
 
 
+                <div className = "ProjectPage-textContainer">
+                    <div style = {{flexDirection: "row", display : "flex", alignItems : "center", paddingBottom: "1vh"}}>
+                        <div style = {{flexDirection:"row", display: "flex", justifyContent:"center", alignItems:"center"}}>
+                            <div className = "ProjectPage-projectName" style = {{ textDecoration: "underline solid #7CFC00"}}>Swamphacks 2022</div>
+                            <div className = "ProjectPage-projectName"> CartIt (3rd Place Overall)</div>
+                            <FontAwesomeIcon style = {{color: "#ffbb73" }}icon= {faTrophy} size = '2x' />
+                        </div>
+                        <FontAwesomeIcon  className = "ProjectPage-socials" 
+                        style = {{color: "lightgray", position:'absolute', right: "4vw"}}icon= {faGithub} size = '3x' onClick = {this.handleSwamphacks2022GH}/>
+                        <FontAwesomeIcon className = "ProjectPage-socials" 
+                        style = {{color: "#FF0000", position:'absolute', right: "0vw"}}icon= {faYoutube} size = '3x' onClick = {this.handleSwamphacks2022YT} />
+                        <img src = {devPost} alt = "Devpost" className = "ProjectPage-devPost" style = {{ width: 64, position:'absolute', right: "8vw"}} onClick = {this.handleSwamphacks2022DP}/>
+                    </div>
+                    <div className='ProjectPage-paragraph'>
+                    Our app works by using a public dataset that contains grocery store items, as well as the store location. Once logging into the app,
+                     we can use the shopping list to add items to buy, edit items, remove items, and switch between different lists. From here, our app 
+                     will check the database to find the lowest price, as well as the location. Our app also allows users to upload their own receipts, 
+                     which then helps update our database with the lowest prices each day. Our app also allows the user to find the nearest store
+                      locations near their current location, as well as their addresses.
+
+                    </div>
+                    <div className = 'ProjectPage-paragraph'>
+                        Our app was built in React Native for the front-end, and utilized various Google Cloud products for the backend, written in Python. 
+                        For example, we used Google Cloud Vision AI and Google Cloud functions to build a pipeline that handles the upload of receipts to 
+                        our cloud storage which then triggers a cloud function that parsers the text in the receipt. This data is processed to reflect any 
+                        changes in minimum prices in our database. We also used other cloud functions to handle services such as retrieving grocery prices.
+                         We also used google maps API and google places API to display user location on a map, and display grocery stores near the user's 
+                         location. To run the app locally, we utilized Expo. Checkout our Github Repo for the specific technologies we used, as well as 
+                         checkout the README.md for more info!
+                    </div>
+                    <div style = {{flexDirection:"row", paddingBottom: "5vh"}}>
+                         <div className = "ProjectPage-button-74" role="button">React Native</div>
+                         <div className = "ProjectPage-button-74" role="button">Google Cloud Functions</div>
+                         <div className = "ProjectPage-button-74" role="button">SQL</div>
+                         <div className = "ProjectPage-button-74" role="button">Google Cloud Vision AI</div>
+                         <div className = "ProjectPage-button-74" role="button">Google Maps</div>
+                         <div className = "ProjectPage-button-74" role="button">Google Places</div>
+                         <div className = "ProjectPage-button-74" style = {{marginTop: "2vh"}}role="button">Expo</div>
+                    </div>
+                   
+                </div>
+
+
+
+
 
 
                 <div className = "ProjectPage-textContainer">
                     <div style = {{flexDirection: "row", display : "flex", alignItems : "center", paddingBottom: "1vh"}}>
-                        <div className = "ProjectPage-projectName" style = {{ textDecoration: "underline wavy #ffbb73"}}>Power Smart</div>
+                        <div className = "ProjectPage-projectName" style = {{ textDecoration: "underline solid #ffbb73"}}>Power Smart</div>
                         <FontAwesomeIcon style = {{color: "#ffbb73" }}icon= {faLightbulb} size = '2x' />
                         <FontAwesomeIcon  className = "ProjectPage-socials" 
                         style = {{color: "lightgray", position:'absolute', right: "4vw"}}icon= {faGithub} size = '3x' onClick = {this.handlePowerSmartGH}/>
@@ -72,7 +128,13 @@ export default class ProjectPage extends React.Component{
                         stretch goals, and other topics during our sprint, which you can find by clicking the Youtube Icon.
                     </div>
                 </div>
-                <div style = {{flexDirection: "row", display: "flex", paddingBottom: "5vh"}}>
+                <div style = {{flexDirection:"row", paddingBottom: "5vh"}}>
+                         <div className = "ProjectPage-button-74" role="button">React Native</div>
+                         <div className = "ProjectPage-button-74" role="button">Expo</div>
+                         <div className = "ProjectPage-button-74" role="button">Node.js</div>
+                         <div className = "ProjectPage-button-74" style = {{marginTop: "2vh"}}role="button">Jest</div>
+                </div>
+                <div style = {{flexDirection: "row", display: "flex"}}>
                     <video 
                         className = "ProjectPage-demos"
                         key={demo1}
@@ -95,6 +157,11 @@ export default class ProjectPage extends React.Component{
                         src={demo3}
                     />
                 </div>
+                <div style = {{paddingBottom: "5vh", paddingLeft:"3vw"}}>
+                    *Click and hover to play demos
+                </div>
+
+                
 
 
 
@@ -105,8 +172,10 @@ export default class ProjectPage extends React.Component{
                 
                 <div className = "ProjectPage-textContainer">
                     <div style = {{flexDirection: "row", display : "flex", alignItems : "center", paddingBottom: "1vh"}}>
-                        <div className = "ProjectPage-projectName" style = {{ textDecoration: "underline wavy #7CFC00"}}>Swamphacks 2021</div>
-                        <FontAwesomeIcon  className = "ProjectPage-socials" 
+                    <div style = {{flexDirection:"row", display: "flex", justifyContent:"center", alignItems:"center"}}>
+                            <div className = "ProjectPage-projectName" style = {{ textDecoration: "underline solid #7CFC00"}}>Swamphacks 2021</div>
+                            <div className = "ProjectPage-projectName"> Rumble in the Swamp</div>
+                        </div>                        <FontAwesomeIcon  className = "ProjectPage-socials" 
                         style = {{color: "lightgray", position:'absolute', right: "4vw"}}icon= {faGithub} size = '3x' onClick = {this.handleSwamphacksGH}/>
                         <FontAwesomeIcon className = "ProjectPage-socials" 
                         style = {{color: "#FF0000", position:'absolute', right: "0vw"}}icon= {faYoutube} size = '3x' onClick = {this.handleSwamphacksYT} />
@@ -122,11 +191,19 @@ export default class ProjectPage extends React.Component{
                          but you can run it locally using the Github Repo, or checkout our demo video by clicking
                         on the Github / Youtube Icons.
                     </div>
+                    <div style = {{flexDirection:"row"}}>
+                         <div className = "ProjectPage-button-74" role="button">React.js</div>
+                         <div className = "ProjectPage-button-74" role="button">Node.js</div>
+                         <div className = "ProjectPage-button-74" role="button">Phaser.js</div>
+                         <div className = "ProjectPage-button-74" style = {{marginTop: "2vh"}}role="button">Firebase</div>
+                    </div>
                     <div style = {{flexDirection: "row", display: "flex", justifyContent: "center", paddingBottom: "5vh"}}>
+
                         <div className = "ProjectPage-gator"></div>
                         <div className = "ProjectPage-gatorInvert"></div>
                     </div>
                 </div>
+                
 
 
 
@@ -138,7 +215,7 @@ export default class ProjectPage extends React.Component{
 
                 <div className = "ProjectPage-textContainer">
                     <div style = {{flexDirection: "row", display : "flex", alignItems : "center", paddingBottom: "1vh"}}>
-                        <div className = "ProjectPage-projectName" style = {{ textDecoration: "underline wavy lightgray"}}>Computerized Economics</div>
+                        <div className = "ProjectPage-projectName" style = {{ textDecoration: "underline solid lightgray"}}>Computerized Economics</div>
                         <FontAwesomeIcon style = {{color: "lightgray" }}icon= {faChartLine} size = '3x' />
                         <FontAwesomeIcon  className = "ProjectPage-socials" 
                         style = {{color: "lightgray", position:'absolute', right: "4vw"}}icon= {faGithub} size = '3x' onClick = {this.handleEconomicsGH}/>
@@ -161,6 +238,11 @@ export default class ProjectPage extends React.Component{
                         were mainly written in C++, our front-end UI was created in C++ as well, using Qt.io, which was a learning experience for me, 
                         as I was mainly familiar with React.js for front-end development. 
                     </div>
+                    <div style = {{flexDirection:"row", paddingBottom: "5vh", marginTop: "2vh"}}>
+                         <div className = "ProjectPage-button-74" role="button">C++</div>
+                         <div className = "ProjectPage-button-74" role="button">Qt.io</div>
+                         <div className = "ProjectPage-button-74" role="button">Data Structures</div>
+                    </div>
                 </div>
 
 
@@ -170,10 +252,19 @@ export default class ProjectPage extends React.Component{
 
                 <div className = "ProjectPage-textContainer">
                     <div style = {{flexDirection: "row", display : "flex", alignItems : "center", paddingBottom: "1vh"}}>
-                        <div className = "ProjectPage-projectName" style = {{ textDecoration: "underline wavy #0077b6"}}>My Website</div>
+                        <div className = "ProjectPage-projectName" style = {{ textDecoration: "underline solid #0077b6"}}>My Website</div>
                         <FontAwesomeIcon style = {{color: "#0077b6" }}icon= {faDesktop} size = '3x' />
                         <FontAwesomeIcon  className = "ProjectPage-socials" 
                         style = {{color: "lightgray", position:'absolute', right: "2vw"}}icon= {faGithub} size = '3x' onClick = {this.handleWebsiteGH}/>
+                    </div>
+                    <div className = "ProjectPage-paragraph">
+                        This entire website was made using React.js, and serves as a portfolio sharing myself, my accomplishments, and my interests.
+                        It is still a work in progress in terms of adding new things and features.
+                        Currently, the website doesn't work great on mobile, but that's the next feature I aim to add on the website.
+                    </div>
+                    <div style = {{flexDirection:"row", paddingBottom: "5vh", marginTop: "2vh"}}>
+                         <div className = "ProjectPage-button-74" role="button">React.js</div>
+                         <div className = "ProjectPage-button-74" role="button">Node.js</div>
                     </div>
                 </div>
             </div>

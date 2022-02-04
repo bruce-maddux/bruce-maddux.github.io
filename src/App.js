@@ -1,7 +1,6 @@
 import './StyleSheets/App.css';
-import { render } from "react-dom";
 import {
-  HashRouter  as Router,
+  BrowserRouter  as Router,
   Route,
   Routes,
 } from "react-router-dom";
@@ -23,6 +22,7 @@ class App extends Component {
             <Route path="/project" element = {<ProjectPage/>}/>
             <Route path="/skills" element = {<SkillsPage/>}/>
             <Route path = "/PvE" element = {<PvE/>}/>
+            <Route path = "/my-website" element = {<MainPage/>}/>
           </Routes>
         </Router>
       </div>
