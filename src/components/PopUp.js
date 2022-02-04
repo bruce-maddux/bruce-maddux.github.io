@@ -31,12 +31,12 @@ class PopUp extends React.Component{
                     </Modal.Header>
                     <div style = {{display: "flex", flexDirection: "column", justifyContent:"center"}}>
                         <Modal.Body>Use the keys WASD to control the gator!</Modal.Body>
-                        <img style = {{width: "10vw", alignSelf:"center"}} src= {wasd} />
+                        <img style = {{width: "10vw", alignSelf:"center"}} src= {wasd} alt = "WASD"/>
                         <Modal.Body> Hold "Q" to chomp, and "E" to swipe!</Modal.Body>
                         <div style = {{display: "flex", flexDirection:"row", alignSelf:"center", paddingTop: "2vh"}}>
-                            <img style = {{width: "3vw", flex: 1}} src = {qKey}/>
+                            <img style = {{width: "3vw", flex: 1}} src = {qKey} alt = "Q"/>
                             <div style = {{paddingLeft: "3vw", paddingRight:"3vw"}}></div>
-                            <img style = {{width: "3vw", flex : 2}} src = {eKey}/>
+                            <img style = {{width: "3vw", flex : 2}} src = {eKey} alt = "E"/>
                         </div>
                         <div style = {{flexDirection: "row", alignSelf:"center", display: "flex", paddingBottom: "2vh"}}>
                             <div className = "PopUp-gatorCronch"></div>

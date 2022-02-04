@@ -67,7 +67,10 @@ export default function SkillsPage(){
                     </div>
                     {frontEnd ? <FontAwesomeIcon icon= {faAngleDown} size = '2x'/> : <FontAwesomeIcon icon= {faAngleUp} size = '2x'/>}
                 </div>
-                {frontEnd && <div>Explaining stuff ive done with front end stuff</div>}
+                {frontEnd && 
+                <div>
+                    Explaining stuff ive done with front end stuff
+                </div>}
 
                 <div style = {{display: "flex", flexDirection: "row", alignItems: "center"}}>
                     <div className = "SkillsPage-interestHeaderText"onClick = {() => setBackEnd(!backEnd)}>
