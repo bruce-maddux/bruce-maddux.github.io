@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.01a81504.chunk.css",
-    "main.js": "/static/js/main.19b75981.chunk.js",
-    "main.js.map": "/static/js/main.19b75981.chunk.js.map",
+    "main.css": "/static/css/main.985315c4.chunk.css",
+    "main.js": "/static/js/main.fb5a8ec0.chunk.js",
+    "main.js.map": "/static/js/main.fb5a8ec0.chunk.js.map",
     "polyfills-dom.js": "/static/js/polyfills-dom.ac4731e1.chunk.js",
     "polyfills-dom.js.map": "/static/js/polyfills-dom.ac4731e1.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.3e19c4e9.js",
     "runtime-main.js.map": "/static/js/runtime-main.3e19c4e9.js.map",
     "static/css/3.6e5f3f5c.chunk.css": "/static/css/3.6e5f3f5c.chunk.css",
-    "static/js/3.3ff295dc.chunk.js": "/static/js/3.3ff295dc.chunk.js",
-    "static/js/3.3ff295dc.chunk.js.map": "/static/js/3.3ff295dc.chunk.js.map",
+    "static/js/3.e3d25452.chunk.js": "/static/js/3.e3d25452.chunk.js",
+    "static/js/3.e3d25452.chunk.js.map": "/static/js/3.e3d25452.chunk.js.map",
     "static/js/4.9cfea78b.chunk.js": "/static/js/4.9cfea78b.chunk.js",
     "static/js/4.9cfea78b.chunk.js.map": "/static/js/4.9cfea78b.chunk.js.map",
     "static/js/5.5ca411a7.chunk.js": "/static/js/5.5ca411a7.chunk.js",
@@ -18,10 +18,11 @@
     "static/js/6.28e660a2.chunk.js.map": "/static/js/6.28e660a2.chunk.js.map",
     "index.html": "/index.html",
     "static/css/3.6e5f3f5c.chunk.css.map": "/static/css/3.6e5f3f5c.chunk.css.map",
-    "static/css/main.01a81504.chunk.css.map": "/static/css/main.01a81504.chunk.css.map",
-    "static/js/3.3ff295dc.chunk.js.LICENSE.txt": "/static/js/3.3ff295dc.chunk.js.LICENSE.txt",
+    "static/css/main.985315c4.chunk.css.map": "/static/css/main.985315c4.chunk.css.map",
+    "static/js/3.e3d25452.chunk.js.LICENSE.txt": "/static/js/3.e3d25452.chunk.js.LICENSE.txt",
     "static/js/polyfills-dom.ac4731e1.chunk.js.LICENSE.txt": "/static/js/polyfills-dom.ac4731e1.chunk.js.LICENSE.txt",
     "static/media/Maddux Bruce Resume 1-7-22.0b99e837.pdf": "/static/media/Maddux Bruce Resume 1-7-22.0b99e837.pdf",
+    "static/media/UFlogo.a14b172b.svg": "/static/media/UFlogo.a14b172b.svg",
     "static/media/WASD.b53f6ed6.png": "/static/media/WASD.b53f6ed6.png",
     "static/media/background.scss": "/static/media/cartographer.d60d8165.png",
     "static/media/PopUp.css": "/static/media/swipeSmall.94f8732d.png",
@@ -34,8 +35,8 @@
   "entrypoints": [
     "static/js/runtime-main.3e19c4e9.js",
     "static/css/3.6e5f3f5c.chunk.css",
-    "static/js/3.3ff295dc.chunk.js",
-    "static/css/main.01a81504.chunk.css",
-    "static/js/main.19b75981.chunk.js"
+    "static/js/3.e3d25452.chunk.js",
+    "static/css/main.985315c4.chunk.css",
+    "static/js/main.fb5a8ec0.chunk.js"
   ]
 }
