@@ -7,6 +7,9 @@ import resume from "../photos/Maddux Bruce Resume 1-7-22.pdf"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import {faAmazon} from '@fortawesome/free-brands-svg-icons'
+import ufLogo from '../photos/UFlogo.svg'
+
 
 
 export default function SkillsPage(){
@@ -60,6 +63,24 @@ export default function SkillsPage(){
                     <ProgressBar variant = "info" animated now = {50}></ProgressBar>
                 </div>
 
+                <div className = "SkillsPage-headerText" style = {{paddingTop: "3vh"}}>Experience</div>
+
+                <div style = {{flexDirection: "row", display:"flex", alignItems:"center"}}>
+                    <div className = "SkillsPage-experienceText" style = {{paddingRight: "1vw"}}>
+                        Incoming Software Development Engineer Intern @ Amazon</div>
+                    <FontAwesomeIcon icon= {faAmazon} size = '3x' color = "#ff9900"/>
+                </div>
+                <div style = {{flexDirection: "row", display:"flex", alignItems:"center"}}>
+                    <div className = "SkillsPage-experienceText" style = {{paddingRight: "1vw"}}>
+                        Undergraduate Researcher @ University of Florida</div>
+                        <img src = {ufLogo} alt = "UF" style = {{backgroundColor: "white", height: "4.5vh"}}/>
+                </div>
+
+
+
+
+
+
                 <div className = "SkillsPage-headerText">Interests</div>
                 <div style = {{display: "flex", flexDirection: "row", alignItems: "center"}}>
                     <div className = "SkillsPage-interestHeaderText"onClick = {() => setFrontEnd(!frontEnd)}>
@@ -79,6 +100,7 @@ export default function SkillsPage(){
                     {backEnd ? <FontAwesomeIcon icon= {faAngleDown} size = '2x'/> : <FontAwesomeIcon icon= {faAngleUp} size = '2x'/>}
                 </div>
                 {backEnd && <div>Explaining stuff ive done with front end stuff</div>}
+                
             </div>
         </div>
     )

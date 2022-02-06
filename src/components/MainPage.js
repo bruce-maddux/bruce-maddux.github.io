@@ -4,7 +4,6 @@ import "./MainPage.css"
 import { Link } from "react-router-dom";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import './background.scss'
-
 class MainPage extends React.Component{
     state = {
         loading: true
